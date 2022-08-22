@@ -1,4 +1,5 @@
-# geo-ip-location
+# IP Locator on Google Maps 
+
 Generating Google Maps Location Link Based on IP
 
-Quick script put together to identify unusual IP logins on GSuite platform.
+Put together to identify location of unusual IP logins on GSuite platform.
