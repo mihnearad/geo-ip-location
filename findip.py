@@ -3,15 +3,15 @@ import time
 
 
 
-cont="y"
+cont= 1
 
-while cont == "y":
+while cont == 1:
     
     IPinput = input("Enter IP To Search: ")
 
     ip = geocoder.ip(IPinput)
 
-    #Get City, Coutry and Coordinates   
+    #Get City, Country and Coordinates   
     print("\nCity: " + ip.city)
     print("Country: "+ip.country)
     print(ip.latlng)
@@ -20,5 +20,11 @@ while cont == "y":
     #Generate google maps link 
     print("https://www.google.com/maps/@"+str(ip.lat)+","+str(ip.lng) +",12z"   )
 
-    cont = input("Do you want to continue? (y/n)")
+    user_input = input("\nDo you want to continue? (y/n) -->")
 
+    #exit if answer is no
+    if user_input == "n":
+        cont=cont+1
+        
+    
+        
